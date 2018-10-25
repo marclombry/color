@@ -125,9 +125,45 @@
 .direction-row-reverse{flex-direction:row-reverse;}
 
 
+/*grid */
+.grid{display:grid;}
 
+/*border*/
+.border-box-white{border:1px solid white;}
+.border-box-carrot{border:1px solid var(--carrot);}
+.border-box-black{border:1px solid black;}
 
+/*margin*/
+.margin0{margin:0px;}
+.margin5{margin:5px;}
+.margin10{margin:0px;}
 
+/*padding*/
+.padding{padding:0px;}
+.padding{padding:5px;}
+.padding{padding:0px;}
+
+/* font-size*/
+.font-size-larger{font-size:larger;}
+.font-size-smaller{font-size:smaller;}
+
+/*animation*/
+@keyframes upopacity {
+	0%{opacity: 0;}
+	40%{opacity: 0.4;}	
+	60%{opacity: 0.9;}	
+	100%{opacity: 1;}	
+}
+
+@keyframes downpopacity {
+	0%{opacity: 1;}
+	40%{opacity: 0.9;}	
+	60%{opacity: 0.4;}	
+	100%{opacity: 0;}	
+}
+
+.up{animation-name:upopacity;animation-duration: 3s;}
+.down{animation-name:downpopacity;animation-duration: 3s;animation-fill-mode: forwards;}
 body{
 	background-color: var(--emerald);/* purple */
 }
