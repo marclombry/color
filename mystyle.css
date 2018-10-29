@@ -212,15 +212,28 @@
 	70%{transform:rotateZ(290deg);transform:scale3d(1.3, 1.3, 1.3) }
 	100{transform:rotateZ(360deg);}
 }
+@keyframes target{
+	0%{transform:rotateZ(160deg);}
+	70%{transform:rotateZ(290deg);transform:scale3d(1.3, 1.3, 1.3) }
+	100{transform:rotateZ(360deg);}
+}
+@keyframes loader{
+	0%{transform:rotateZ(0deg);}
+	100%{transform:rotateZ(360deg);}
+
+}
 
 /*animation */
 .up{animation-name:upopacity;animation-duration: 3s;}
 .down{animation-name:downpopacity;animation-duration: 3s;animation-fill-mode: forwards;}
 .pulse{animation: pulse 2s infinite;}
 .touch:hover{animation: touch;animation-duration:2s;cursor:pointer;}
+.touch:active{animation: touch;animation-duration:1s;cursor:pointer;}
 .drive-right{animation : drive-right; animation-duration:1s;animation-timing-function: ease;animation-fill-mode: forwards;}
 .promo{animation: promo 2s; }
-
+.target{height:60px;width:60px;border-radius:50%;border:1px solid rgba(232,232,232,0.8);}
+.target:hover{animation: target 1s infinite;}
+.loader{height:60px;width:60px;border-radius:50%;border:6px dotted var(--silver);animation: loader 1s infinite;}
 /* effect */
 .rond-touch{width:30px;height:30px;background-color:var(--cloud);border-radius:50%;opacity: 0.6;}
 .shadow-touch:hover{ box-shadow:inset 1px 1px 1px var(--silver);}
