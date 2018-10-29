@@ -324,6 +324,9 @@
 
 /* open*/
 .o{display:block;}
+/*hidden*/
+.hide{display: none;}
+.show:hover{display: flex;flex-wrap:wrap;}
 
 /* quickly content*/
 .flex-horizontal-navbar-header{display:flex;flex-wrap:wrap;justify-content:space-around;padding:20px 0px;text-decoration:none;list-style-type:none;}
