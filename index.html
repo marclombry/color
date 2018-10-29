@@ -5,7 +5,7 @@
   <title>Titre de la page</title>
   <link rel="stylesheet" href="mystyle.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="script.js"></script>
+
 </head>
 <body>
   <p class="border-box-grey up animation-duratuin-5">up</p>
@@ -33,24 +33,41 @@
   <br>
   <br>
 
-  <div class ="display-flex">
+  <div class ="display-flex ">
     <div class="symbol-error"><span class="title text-ligth symbol-englob">X</span></div>
     <div class="message-error text-ligth alert-message">Error fatala probleme</div>
+    <div class="symbol-error cross-close text-ligth text-bold" >X</div>
   </div>
 
    <div class ="display-flex">
     <div class="symbol-info"><span class="title text-ligth symbol-englob">!</span></div>
     <div class="message-info text-ligth alert-message">Infos new infos</div>
+    <div class="symbol-info cross-close text-ligth text-bold">X</div>
   </div>
 
-   <div class ="display-flex">
+   <div class ="display-flex ">
     <div class="symbol-warning"><span class="title text-ligth symbol-englob">W</span></div>
     <div class="message-warning text-ligth alert-message">Warning is danger here</div>
+    <div class="symbol-warning cross-close text-ligth text-bold">X</div>
   </div>
 
-   <div class ="display-flex">
+   <div id="closeError" class ="display-flex" >
     <div class="symbol-success"><span class="title text-ligth symbol-englob">V</span></div>
     <div class="message-success text-ligth alert-message">Congratulations, it's a great success !</div>
+    <div class="symbol-success cross-close text-ligth text-bold pointer">X</div>
   </div>
+  <script>
+  /* recuperer tout les élément qui on la class cross-close */
+      const x = document.getElementsByClassName('cross-close');
+      /* donner a tous une fonction anonymes qui donne la class x(display none) a leur élément parent (div)*/     
+      [].forEach.call(x, function(el){
+        el.addEventListener('click',
+          function(){
+            el.parentNode.className="x"
+          },
+          false)
+      });
+ 
+  </script>
 </body>
 </html>

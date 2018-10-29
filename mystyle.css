@@ -87,7 +87,8 @@
 
 /*text */
 .text-center{text-align: center;}
-.text-ligth{color:var(--cloud);text-shadow:rgba(204,169,44, 0.8);}
+.text-bold{font-weight: bold;}
+.text-ligth{color:var(--cloud);text-shadow:10px 10px 10px 10px  rgba(204,169,44, 0.8);}
 .text-size18{font-size:1.875em;}
 .text-tomato{color:var(--tomato-red);}
 .text-gold{color:var(--sun-flower);}
@@ -277,6 +278,7 @@
 .number-notify{display: block;}
 .shadow-touch:hover{ box-shadow:inset 1px 1px 1px var(--silver);}
 .press:active{box-shadow: 0 5px var(--silver);transform: translateY(4px);}
+.pointer{cursor:pointer;}
 
 /*formular*/
 
