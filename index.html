@@ -36,19 +36,19 @@
   <div class ="display-flex ">
     <div class="symbol-error"><span class="title text-ligth symbol-englob">X</span></div>
     <div class="message-error text-ligth alert-message">Error fatala probleme</div>
-    <div class="symbol-error cross-close text-ligth text-bold" >X</div>
+    <div class="symbol-error cross-close text-ligth text-bold pointer" >X</div>
   </div>
 
    <div class ="display-flex">
     <div class="symbol-info"><span class="title text-ligth symbol-englob">!</span></div>
     <div class="message-info text-ligth alert-message">Infos new infos</div>
-    <div class="symbol-info cross-close text-ligth text-bold">X</div>
+    <div class="symbol-info cross-close text-ligth text-bold pointer">X</div>
   </div>
 
    <div class ="display-flex ">
     <div class="symbol-warning"><span class="title text-ligth symbol-englob">W</span></div>
     <div class="message-warning text-ligth alert-message">Warning is danger here</div>
-    <div class="symbol-warning cross-close text-ligth text-bold">X</div>
+    <div class="symbol-warning cross-close text-ligth text-bold pointer">X</div>
   </div>
 
    <div id="closeError" class ="display-flex" >
@@ -60,6 +60,7 @@
   /* recuperer tout les élément qui on la class cross-close */
       const x = document.getElementsByClassName('cross-close');
       /* donner a tous une fonction anonymes qui donne la class x(display none) a leur élément parent (div)*/     
+      /*
       [].forEach.call(x, function(el){
         el.addEventListener('click',
           function(){
@@ -67,10 +68,12 @@
           },
           false)
       });
-      
-      /*permet de recupéré un élément (commen en jquery par exemple)
+      */
+      /*permet de recupéré un élément (commen en jquery par exemple)*/
       const s = (selector)=> document.querySelector(selector);
-     
+      const ss = (allselector) => document.querySelectorAll(allselector);
+      const close = ss('.cross-close').forEach((i) =>i.addEventListener('click',()=>i.parentNode.className="x"));
+
   </script>
 </body>
 </html>
