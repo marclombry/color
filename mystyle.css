@@ -291,6 +291,14 @@
 .nosail{opacity:1;}
 .nosail:hover{opacity: 0.7;}
 
+/* table */
+
+.table-frame{border-collapse: collapse;width: 100%;}
+.table-frame td, .table-frame th {border: 1px solid #ddd;padding: 8px;}
+.table-frame tr:nth-child(even){background-color: #f2f2f2;}
+.table-frame tr:hover {background-color: #ddd;}
+.table-frame th {padding-top: 12px;padding-bottom: 12px;text-align: left;}
+
 /*formular*/
 
 .input-search{width: 130px;box-sizing: border-box;border: 2px solid #ccc;border-radius: 4px;font-size: 16px;background-color: white;
