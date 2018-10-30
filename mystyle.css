@@ -78,13 +78,14 @@
 .title-section{}
 
 /* box */
-.box{}
+.box{border:1px solid var(--cloud); box-shadow:2px 2px 2px 2px rgba(195,195,195,0.3);max-width: 400px; }
 .box-size{}
 .box-margin{}
 .box-padding{}
 .box-height{}
 .box-width{}
 .box-profil{}
+.box-content{text-align: justify;padding:10px;overflow: auto;}
 
 
 /*text */
@@ -285,6 +286,10 @@
 .shadow-touch:hover{ box-shadow:inset 1px 1px 1px var(--silver);}
 .press:active{box-shadow: 0 5px var(--silver);transform: translateY(4px);}
 .pointer{cursor:pointer;}
+.sail{opacity: 0.7;}
+.sail:hover{opacity:1;}
+.nosail{opacity:1;}
+.nosail:hover{opacity: 0.7;}
 
 /*formular*/
 
