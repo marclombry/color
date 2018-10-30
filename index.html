@@ -8,9 +8,9 @@
 
 </head>
 <body>
-  <p class="border-box-grey up animation-duratuin-5">up</p>
-  <p class="border-box-grey down animation-duratuin-5">down</p>
-  <p class="rond-touch touch press"></p>
+  <p class="border-box-grey anim-up animation-duratuin-5">up</p>
+  <p class="border-box-grey anim-down animation-duratuin-5">down</p>
+  <p class="rond-touch anim-touch press"></p>
   <p class="rond-touch"></p>
    <p class="promo" style ="text-align:center;">PROMO !</p>
    <button class="rec-button void-success"> bravo </button>
@@ -21,10 +21,10 @@
    <div class="column5 "><h1>coc</h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</div>
    <div class="rec-button filled-warning ">information cookie bal</div>
    <!--<div id="heart"></div>-->
-   <div class="loader"></div>
+   <div class="anim-loader"></div>
 
-  <p class="notify notify-wait pulse press"><span class="number-notify text-center">6</span>
-    <i class="glyphicon glyphicon-bell active-bell text-size18 text-gold "></i>
+  <p class="notify notify-wait anim-pulse press"><span class="number-notify text-center">6</span>
+    <i class="glyphicon glyphicon-bell anim-active-bell text-size18 text-gold "></i>
   </p>
    <p class="notify notify-success"><span class="number-notify text-center">0</span>
     <i class="glyphicon glyphicon-bell text-size18 text-gold "></i>
@@ -80,7 +80,7 @@
   <p class="">content </p>
 </div>
 
-<div class="box bg-dupain">
+<div class="box bg-dupain anim-bigger">
   <p class="title text-center">titrle</p>
   <div class="box-content bg-sun-flower">
       lorem ipsum text juras label paradym stoica malus devos som deus rex latinous
@@ -91,16 +91,37 @@
   <thead>
     <tr>
         <th class="bg-emerald cloud">article</th>
-        <th class="bg-emerald cloud">price</th>
+        <th class="bg-emerald cloud">pro</th>
+        <th class="bg-emerald cloud">eco</th>
+        <th class="bg-emerald cloud">poids</th>
+        <th class="bg-emerald cloud">conso</th>
+        <th class="bg-mandarin-red dupain">price</th>
     </tr>
   </thead>
   <tbody>
     <tr>
         <td>voiture</td>
+        <td>voiture</td>
+        <td>15000 €</td>
+        <td>voiture</td>
+        <td>15000 €</td>
+        <td>15000 €</td>
+    </tr>
+     <tr>
+        <td class="anim-bigger">voiture</td>
+        <td>voiture</td>
+        <td>15000 €</td>
+        <td>voiture</td>
+        <td>15000 €</td>
         <td>15000 €</td>
     </tr>
   </tbody>
 </table>
+
+  <div class="carte perspective anim-carte">
+    <div id="devant" class="front-carte bg-dupain">Devant</div>
+    <div id="derriere" class="back-carte bg-emerald">Derrière !</div>
+  </div>
   <script>
   /* recuperer tout les élément qui on la class cross-close */
       const x = document.getElementsByClassName('cross-close');

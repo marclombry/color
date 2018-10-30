@@ -256,23 +256,28 @@
   100% { transform: rotate(0); }
 }
 
-@keyframes staring{
-	
-	100%{margin-top:-100px;color:red;}
+@keyframes staring{100%{margin-top:-100px;color:red;}}
+@keyframes bigger{100%{transform: translate3d(0,0, 100px);}}
+@keyframes return-carte{
+	0%{transform: rotateY(0deg);}
+	100%{transform: rotateY(360deg);}
 }
+
 /*animation */
-.up{animation-name:upopacity;animation-duration: 3s;}
-.down{animation-name:downpopacity;animation-duration: 3s;animation-fill-mode: forwards;}
-.pulse{animation: pulse 2s infinite;}
-.touch:hover{animation: touch;animation-duration:2s;cursor:pointer;}
-.touch:active{animation: touch;animation-duration:1s;cursor:pointer;}
-.drive-right{animation : drive-right; animation-duration:1s;animation-timing-function: ease;animation-fill-mode: forwards;}
-.promo{animation: promo 2s; }
-.target{height:60px;width:60px;border-radius:50%;border:1px solid rgba(232,232,232,0.8);}
-.target:hover{animation: target 1s infinite;}
-.loader{height:60px;width:60px;border-radius:50%;border:6px dotted var(--silver);animation: loader 1s infinite;}
-.staring{animation: staring 1s infinite;}
-.active-bell{animation: belling 1s infinite;}
+.anim-up{animation-name:upopacity;animation-duration: 3s;}
+.anim-down{animation-name:downpopacity;animation-duration: 3s;animation-fill-mode: forwards;}
+.anim-pulse{animation: pulse 2s infinite;}
+.anim-touch:hover{animation: touch;animation-duration:2s;cursor:pointer;}
+.anim-touch:active{animation: touch;animation-duration:1s;cursor:pointer;}
+.anim-drive-right{animation : drive-right; animation-duration:1s;animation-timing-function: ease;animation-fill-mode: forwards;}
+.anim-promo{animation: promo 2s; }
+.anim-target{height:60px;width:60px;border-radius:50%;border:1px solid rgba(232,232,232,0.8);}
+.anim-target:hover{animation: target 1s infinite;}
+.anim-loader{height:60px;width:60px;border-radius:50%;border:6px dotted var(--silver);animation: loader 1s infinite;}
+.anim-staring{animation: staring 1s infinite;}
+.anim-active-bell{animation: belling 1s infinite;}
+.anim-bigger:hover{animation: bigger 2s;}
+.anim-carte{animation: return-carte 2s;}
 
 
 
@@ -291,6 +296,13 @@
 .nosail{opacity:1;}
 .nosail:hover{opacity: 0.7;}
 
+/* 3d */
+.perspective{perspective: 800px;}
+.carte{width:200px;height:300px;position: absolute;opacity: 0.5;font-size: 1.3em;transition: 2s;backface-visibility: hidden;}
+.front-carte{z-index:100;}
+.back-carte{z-index:50;transform: rotateY(-180deg); }
+.front-carte:hover{transform: rotateY(360deg);}
+.front-carte:hover + .back-carte{transform: rotateY(180deg);}
 /* table */
 
 .table-frame{border-collapse: collapse;width: 100%;}
