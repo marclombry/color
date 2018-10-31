@@ -277,6 +277,11 @@
 	0%{transform:translate3d(0px, 0px, 10px);opacity: 1;}
 	100%{transform:translate3d(1000px, 0px, 10px);opacity: 0;display: none;}
 }
+@keyframes star-wars{
+	0%{transform: perspective(1000px) rotateX(45deg);opacity: 1;}
+	100%{transform: perspective(10px) rotateX(45deg);opacity: 1;;opacity: 0;display:none;}
+}
+
 
 /*animation */
 .anim-up{animation-name:upopacity;animation-duration: 3s;}
@@ -294,7 +299,7 @@
 .anim-bigger:hover{animation: bigger 2s;}
 .anim-carte{animation: return-carte 2s;}
 .anim-throw-money{animation: throw-money 3s ;animation-fill-mode: forwards;}
-
+.anim-star-wars{animation: star-wars 6s ;animation-fill-mode: forwards;}
 
 
 
@@ -349,6 +354,9 @@
 .back-carte{z-index:50;transform: rotateY(-180deg); }
 .front-carte:hover{transform: rotateY(360deg);}
 .front-carte:hover + .back-carte{transform: rotateY(180deg);}
+.deep-right{transform: perspective(400px) rotateY(45deg);}
+.deep-left{transform: perspective(400px) rotateY(45deg);}
+
 /* table */
 
 .table-frame{border-collapse: collapse;width: 100%;}
