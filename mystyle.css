@@ -313,7 +313,9 @@
 .anim-star-wars{animation: star-wars 4s ;}
 .anim-star-wars-reverse{animation: star-wars-reverse 4s;}
 
-
+/* animation duration*/
+.anim-time-2{animation-duration:2s;}
+.anim-delay-2{animation-delay:20s;}
 
 /* effect */
 .rond-touch{width:30px;height:30px;background-color:var(--cloud);border-radius:50%;opacity: 0.6;}
@@ -367,7 +369,10 @@
 .front-carte:hover{transform: rotateY(360deg);}
 .front-carte:hover + .back-carte{transform: rotateY(180deg);}
 .deep-right{transform: perspective(400px) rotateY(45deg);}
-.deep-left{transform: perspective(400px) rotateY(45deg);}
+.deep-left{transform: perspective(400px) rotateY(-45deg);}
+.scale3d-2{
+	transform:scale(2,2,2);
+}
 
 /* table */
 
@@ -690,4 +695,11 @@ content: '';
 }
 .horizontal-box::-webkit-scrollbar {
   display: none;
+}
+/*Designing Safer Web Animation For Motion Sensitivity · */
+@media (prefers-reduced-motion: reduce) {
+  .animation {
+    animation: none;
+    -webkit-animation: none;
+  }
 }
