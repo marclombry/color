@@ -87,7 +87,7 @@
   </div>  
 </div>
 
-<table class="table-frame anim-star-wars-reverse">
+<table class="table-frame ">
   <thead>
     <tr>
         <th class="bg-emerald cloud">article</th>
@@ -127,25 +127,14 @@
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeizKvxXgSJzEIPjFqQmYQmVI2H3HeHXSwQQP9vOLeXUa6i-lSJQ">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeizKvxXgSJzEIPjFqQmYQmVI2H3HeHXSwQQP9vOLeXUa6i-lSJQ">
   </div>
-  <h1 class="">Jean claud convenent</h1>
-  <script>
-  /* recuperer tout les élément qui on la class cross-close */
-      const x = document.getElementsByClassName('cross-close');
-      /* donner a tous une fonction anonymes qui donne la class x(display none) a leur élément parent (div)*/     
-      /*
-      [].forEach.call(x, function(el){
-        el.addEventListener('click',
-          function(){
-            el.parentNode.className="x"
-          },
-          false)
-      });
-      */
-      /*permet de recupéré un élément (commen en jquery par exemple)*/
-      const s = (selector)=> document.querySelector(selector);
-      const ss = (allselector) => document.querySelectorAll(allselector);
-      const close = ss('.cross-close').forEach((i) =>i.addEventListener('click',()=>i.parentNode.className="x"));
+ 
 
-  </script>
+   <div class="horizontal-box">
+      <div class="horizontal-card">a</div>
+      <div class="horizontal-card">b</div>
+      <div class="horizontal-card">c</div>
+   </div>
+
+  <script src="animcss.js"></script>
 </body>
 </html>
