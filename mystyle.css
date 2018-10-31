@@ -519,6 +519,52 @@
 	transform-origin: top right;
 	transform:skewY(-4deg);
 }
+
+.razor-left-bottom{
+	position:relative;
+	width: 100%;
+	height: 400px;
+	box-sizing: border-box;
+	padding:30px;
+	margin-bottom: 100px;
+	
+}
+.razor-left-bottom:after{
+	position:absolute;
+	width:100%;
+	height: 100%;
+	content: '';
+	background:inherit;
+	z-index: -1;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left:0;
+	transform-origin: bottom left;
+	transform:skewY(-4deg);
+}
+
+.razor-half-center{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.razor-half{
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+/* background paralax */
+.parallax{
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 /*background*/
 .bg-emerald{background-color:var(--emerald);}/* green */
 .bg-turquoise{background-color:var(--turquoise);}/* green */ 
