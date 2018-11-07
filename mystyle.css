@@ -867,8 +867,8 @@ content: '';
 /* draw phone */
 
 .phone-shell{
-	background-color: black;
-	border:1px solid grey;
+	
+	border:1px solid var(--silver);
 	height: 500px;
 	width: 300px;
 	border-radius:10%; 
@@ -887,12 +887,44 @@ content: '';
 	padding-top:4px;
 }
 .phone-button{
-	background-color: grey;
 	height: 40px;
 	width: 40px;
 	border-radius:90%; 
 	margin:auto;
+	opacity: 0.8;
 }
+
+/*draw pad */
+.pad-shell{
+	border:1px solid var(--silver);
+	height: 300px;
+	width: 500px;
+	border-radius:10%; 
+}
+
+.pad-screen{
+	border:1px solid white;
+	height: 230px;
+	border-radius:10%;
+	margin:10px;
+	background: transparent url('') no-repeat center;
+	background-size: cover;
+}
+.pad-screen-void{
+	border:1px solid white;
+	height: 230px;
+	border-radius:10%;
+	margin:10px;
+}
+.pad-button{
+	height: 40px;
+	width: 40px;
+	border-radius:90%; 
+	margin:auto;
+	opacity: 0.8;
+}
+/* draw screen */
+
 /*Designing Safer Web Animation For Motion Sensitivity · */
 @media (prefers-reduced-motion: reduce) {
   .animation {
