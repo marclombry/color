@@ -999,6 +999,13 @@ content: '';
 	height: 30px;width:30px;border-radius: 50%; background:radial-gradient(circle, white, var(--pixelated-grass));
 	box-shadow: 2px -1px 4px var(--pixelated-grass);margin: 6px auto;opacity: 0.1;
 }
+
+/* furniture */
+.board-box{width:300px;margin:auto;}
+.board{width: 300px;height: 20px;background: black;}
+.board-foot{ height:200px;width:260px;border-left: 10px solid black;border-right: 10px solid black;margin: auto;padding: 10px;}
+.buffet-drawer{padding:10px;background: black;width: 80%;height:30%;margin:6px auto;}
+.buffet-handle{height: 30px;width:30px;border-radius: 50%; margin:auto;}
 /*Designing Safer Web Animation For Motion Sensitivity · */
 @media (prefers-reduced-motion: reduce) {
   .animation {
