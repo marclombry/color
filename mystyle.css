@@ -863,11 +863,9 @@ content: '';
   display: none;
 }
 
-
 /* draw phone */
 
 .phone-shell{
-	
 	border:1px solid var(--silver);
 	height: 500px;
 	width: 300px;
@@ -885,11 +883,9 @@ content: '';
 	height: 430px;
 	border-radius:10%;
 	margin:10px;
-	background: transparent url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeizKvxXgSJzEIPjFqQmYQmVI2H3HeHXSwQQP9vOLeXUa6i-lSJQ') no-repeat center;
+	background: transparent url('http://marclombry.com/public/images/marc.jpg') no-repeat center;
 	background-size: cover;
-
-	position: relative;
-	
+	position: relative;	
 }
 .phone-protect-screen{
 	position: relative;
@@ -902,8 +898,12 @@ content: '';
 }
 
 .phone-protect-screen:hover {
-	transform: translate(160px,-160px);
+	transform: translate(160px,-600px);
 	opacity: 0.6;
+}
+
+.phone-button:hover ~ div > .phone-screen{
+	display: none;
 }
 .phone-shell-button{
 	background-color: red;
@@ -925,13 +925,12 @@ content: '';
 	width: 500px;
 	border-radius:10%; 
 }
-
 .pad-screen{
 	border:1px solid white;
 	height: 230px;
 	border-radius:10%;
 	margin:10px;
-	background: transparent url('') no-repeat center;
+	background: transparent url('http://marclombry.com/public/images/marc.jpg') no-repeat center;
 	background-size: cover;
 }
 .pad-screen-void{
@@ -948,6 +947,36 @@ content: '';
 	opacity: 0.8;
 }
 /* draw screen */
+.pc-shell{
+	border:1px solid var(--silver);
+	height: 300px;
+	width: 500px;
+	border-radius:2%; 
+}
+.pc-screen-void{
+	border:1px solid white;
+	height: 230px;
+	margin:10px;	
+}
+.pc-screen{
+	border:1px solid white;
+	height: 230px;
+	margin:10px;
+	background: var(--waterfall) url('http://marclombry.com/public/images/marc.jpg') no-repeat center;
+	opacity:0.8;
+	
+}
+.pc-foot{
+	margin:auto;
+	height:50px;
+	width: 50px;
+}
+.pc-foot-circle{
+	margin:auto;
+	height:40px;
+	width: 200px;
+	border-radius:80%;
+}
 
 /*Designing Safer Web Animation For Motion Sensitivity · */
 @media (prefers-reduced-motion: reduce) {
