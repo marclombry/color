@@ -873,6 +873,13 @@ content: '';
 	width: 300px;
 	border-radius:10%; 
 }
+.phone-screen-void,.phone-screen-red{
+	border:1px solid white;
+	height: 430px;
+	border-radius:10%;
+	margin:10px;
+}
+.phone-screen-red{background-color: red;}
 .phone-screen{
 	border:1px solid white;
 	height: 430px;
@@ -880,6 +887,23 @@ content: '';
 	margin:10px;
 	background: transparent url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeizKvxXgSJzEIPjFqQmYQmVI2H3HeHXSwQQP9vOLeXUa6i-lSJQ') no-repeat center;
 	background-size: cover;
+
+	position: relative;
+	
+}
+.phone-protect-screen{
+	position: relative;
+	transition: 0.5s;
+	background:var(--cloud);
+	border-radius: 31px;
+    padding: 4px;
+    height: 100%;
+    opacity:0.4;
+}
+
+.phone-protect-screen:hover {
+	transform: translate(160px,-160px);
+	opacity: 0.6;
 }
 .phone-shell-button{
 	background-color: red;
