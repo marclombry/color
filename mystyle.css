@@ -977,7 +977,28 @@ content: '';
 	width: 200px;
 	border-radius:80%;
 }
-
+/* moon */
+.moon{height: 30px;width:30px;border-radius: 50%; background:radial-gradient(circle, white, grey);box-shadow: 2px -1px 4px grey;}
+.mini-moon{height: 6px;width:6px;border-radius: 50%; background:radial-gradient(circle, white, grey);box-shadow: 2px -1px 4px grey;}
+/* sun */
+.sun{height: 30px;width:30px;border-radius: 50%; background:radial-gradient(circle, white, yellow, orange,red);box-shadow: 2px -1px 4px orange;}
+/*earth*/
+.earth{height: 30px;width:30px;border-radius: 50%; background:radial-gradient(circle, white, blue);box-shadow: 2px -1px 4px blue;}
+/* traffic light */
+.traffic-light{padding: 10px; background-color:black; width: 80px;}
+.traffic-light-foot{background-color:black; width: 20px;height:200px;margin:auto;}
+.traffic-red{
+	height: 30px;width:30px;border-radius: 50%; background:radial-gradient(circle, white, var(--red-piment));
+	box-shadow: 2px -1px 4px var(--red-piment);margin: 6px auto;
+}
+.traffic-orange{
+	height: 30px;width:30px;border-radius: 50%; background:radial-gradient(circle, white, var(--carrot-orange));
+	box-shadow: 2px -1px 4px var(--carrot-orange);margin: 6px auto;opacity: 0.1;
+}
+.traffic-green{
+	height: 30px;width:30px;border-radius: 50%; background:radial-gradient(circle, white, var(--pixelated-grass));
+	box-shadow: 2px -1px 4px var(--pixelated-grass);margin: 6px auto;opacity: 0.1;
+}
 /*Designing Safer Web Animation For Motion Sensitivity · */
 @media (prefers-reduced-motion: reduce) {
   .animation {
