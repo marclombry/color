@@ -1003,8 +1003,8 @@ content: '';
 .mbook-shell{
 	border:1px solid var(--silver);
 	height: 60%;
-	width: 70%;
-	border-radius:10% 10% 0% 0%;
+	width: 80%;
+	border-radius:10% 10% 4% 4%;
 }
 .mbook-screen{
 	border:1px solid white;
@@ -1029,7 +1029,7 @@ content: '';
 	opacity: 0.8;
 }
 .mbook-foot{
-	height: 50px;
+	height: 10%;
 	width: 100%;
 	border-radius:0% 0% 10% 10%;
 }
