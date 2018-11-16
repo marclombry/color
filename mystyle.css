@@ -29,7 +29,7 @@
 	--mandarin-red:#e55039;/* red */
 	--azraq-blue:#4a69bd;/* blue */
 	--dupain:#4a69bd;/* blue */
-	--aurora-green:#4a69bd;/* green */
+	--aurora-green:#78e08f;/* green */
 	--iceland-poppy:#fa983a;/* orange */
 	--tomato-red:#eb2f06;/* red */
 	--yue-guang-lan-blue:#1e3799;/* blue */
@@ -74,6 +74,11 @@
 	align-items: center;
 	justify-content: center;
 }
+.bodyEarth{
+	background: transparent url('../images/earth.jpg') no-repeat center;
+	background-size: cover;
+	
+}
 /* title */
 .title{font-size:1.875em;font-weight: bold;font-family:  sans-serif;}
 .title-nav{}
@@ -91,9 +96,22 @@
 	border-bottom: 1px solid var(--silver);
 	padding: 10px; 
 }
-
+/*opacity*/
+.opacity1{opacity:0.1;}
+.opacity2{opacity:0.2;}
+.opacity3{opacity:0.3;}
+.opacity4{opacity:0.4;}
+.opacity5{opacity:0.5;}
+.opacity6{opacity:0.6;}
+.opacity7{opacity:0.7;}
+.opacity8{opacity:0.8;}
+.opacity9{opacity:0.9;}
+.opacity10{opacity:1;}
 /* width */
 .width100px{width: 100px;}
+.width200px{width: 200px;}
+.width300px{width: 300px;}
+.width400px{width: 400px;}
 .width500px{width: 500px;}
 .width100{width: 100%;}
 .width90{width: 90%;}
@@ -109,6 +127,9 @@
 
 /* height */
 .height100px{height: 100px;}
+.height200px{height: 200px;}
+.height300px{height: 300px;}
+.height400px{height: 400px;}
 .height500px{height: 500px;}
 .height100{height: 100%;}
 .height90{height: 90%;}
@@ -132,8 +153,10 @@
 .box-content{text-align: justify;padding:10px;overflow: auto;}
 .box-width300{width: 300px;}
 .box-img{width:100%;}
+.box-hover:hover{opacity: .8;}
 
-
+/*icon*/
+.icon-top-middle{position:relative;top:40%;}
 /*text */
 .text-center{text-align: center;}
 .text-bold{font-weight: bold;}
@@ -194,6 +217,7 @@
 .margin0{margin:0px;}
 .margin5{margin:5px;}
 .margin10{margin:10px;}
+.nav-bottom-margin{margin:60px;}
 
 /*padding*/
 .padding0{padding:0px;}
@@ -335,6 +359,7 @@
 @keyframes door-open{100%{transform: rotateY(200deg) translateX(100px) skewY(-20deg);}}
 @keyframes show-card{100%{transform: rotateY(200deg) translateX(100px) skewY(-20deg) scale(2);}}
 @keyframes show-traffic-light{100%{opacity: 1;}}
+@keyframes break-traffic-light{opacity: 0.1;}
 /*animation */
 .anim-up{animation-name:upopacity;animation-duration: 3s;}
 .anim-down{animation-name:downpopacity;animation-duration: 3s;animation-fill-mode: forwards;}
@@ -408,6 +433,8 @@
 .filter-effect{opacity:0.7;}
 .filter-effect-hover:hover{opacity:0.7;}
 .fixed{position:fixed;}
+/* a href*/
+.no-deco,.no-deco:hover{text-decoration: none;}
 /* 3d */
 .perspective{perspective: 800px;}
 .perspective100{perspective: 100px;}
@@ -648,7 +675,8 @@
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeizKvxXgSJzEIPjFqQmYQmVI2H3HeHXSwQQP9vOLeXUa6i-lSJQ");
+ 
 }
 /*background*/
 .bg-emerald{background-color:var(--emerald);}/* green */
@@ -957,12 +985,53 @@ content: '';
 	border-radius:10%;
 	margin:10px;
 }
+
 .pad-button{
 	height: 40px;
 	width: 40px;
 	border-radius:90%; 
 	margin:auto;
 	opacity: 0.8;
+}
+/*draw pc book */
+.mbook-back{
+	
+	height: 300px;
+	width: 500px;
+
+}
+.mbook-shell{
+	border:1px solid var(--silver);
+	height: 60%;
+	width: 70%;
+	border-radius:10% 10% 0% 0%;
+}
+.mbook-screen{
+	border:1px solid white;
+	height:100%;
+	border-radius:10% 10% 0% 0%;
+	margin:10px;
+	background: transparent url('http://marclombry.com/public/images/marc.jpg') no-repeat center;
+	background-size: cover;
+}
+.mbook-screen-void{
+	border:1px solid white;
+	height: 100%;
+	border-radius:10% 10% 0% 0%;
+	margin:10px;
+}
+
+.mbook-button{
+	height: 40px;
+	width: 40px;
+	border-radius:90%; 
+	margin:auto;
+	opacity: 0.8;
+}
+.mbook-foot{
+	height: 50px;
+	width: 100%;
+	border-radius:0% 0% 10% 10%;
 }
 /* draw screen */
 .pc-shell{
@@ -1005,9 +1074,9 @@ content: '';
 /* traffic light */
 .traffic-light{padding: 10px; background-color:black; width: 80px;}
 .traffic-light-foot{background-color:black; width: 20px;height:200px;margin:auto;}
-.traffic-red:hover{opacity: 1;}
-.traffic-orange:hover{opacity: 1;}
-.traffic-green:hover{opacity: 1;}
+.traffic-red:hover{animation: break-traffic-light 2s;}
+.traffic-orange:hover{animation: break-traffic-light 2s;}
+.traffic-green:hover{animation: break-traffic-light 2s;}
 .traffic-red{
 	height: 30px;width:30px;border-radius: 50%; background:radial-gradient(circle, white, var(--red-piment));
 	box-shadow: 2px -1px 4px var(--red-piment);margin: 6px auto;opacity: 0.1;
